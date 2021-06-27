@@ -15,11 +15,16 @@ const generateGreeting = (hours) => {
 const Greeting = () => {
 
     let date = new Date();
-
+    
     return (
-        <h1 id="title">
-            {generateGreeting(date.getHours())}
-        </h1>
+        <>
+            <h1>
+                Lucitive
+            </h1>
+            <h2 id="title">
+                {generateGreeting(date.getHours())}
+            </h2>
+        </>
     )
 }
 

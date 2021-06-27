@@ -12,8 +12,7 @@ div.App {
   flex-direction: column;
 }
 
-h1#title {
-  color: maroon;
+h2#title {
   font-size: 4rem;
   font-family: 'Notable', sans-serif;
 }
@@ -23,5 +22,4 @@ div.Quote {
 }
 
 div.Video {
-  background-color: grey;
 }
