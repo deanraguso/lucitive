@@ -1,12 +1,38 @@
-const Quote = () => {
+import { useEffect } from "react";
+import { useState } from "react"
+
+const getQuote = () => {
+    const response = fetch("http://quotes.stormconsultancy.co.uk/random.json")
+    .then(response => response.json())
+    .then(json => {
+        return json;
+    })
+    
+    return response;
+}
+
+const Quote = () => {   
+    
+    let [ quote, setQuote ] = useState({});
+
+    useEffect(() => {
+
+        (async function fetchQuote() {
+
+            let quote = await getQuote();
+            setQuote(quote);
+
+        })();
+    }, []);
+
     return (
         <div className="Quote">
             <p>
-                "It always seems impossible until it's done."
+                {quote.quote}
             </p>
             <strong>
                 <p>
-                    "Nelson Mandela"
+                    {quote.author}
                 </p>
             </strong>
         </div>
