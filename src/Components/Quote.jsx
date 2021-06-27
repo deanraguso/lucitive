@@ -23,6 +23,7 @@ const Quote = () => {
             setQuote(quote);
 
         })();
+        
     }, []);
 
     return (
