@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+div.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1#title {
+  color: maroon;
+  font-size: 4rem;
+  font-family: 'Notable', sans-serif;
+}
+
+div.Quote {
+  font-size: 2rem;
+}
+
+div.Video {
+  background-color: grey;
+  width: 700px;
+  height: 400px;
+}
